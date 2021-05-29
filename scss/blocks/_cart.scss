@@ -1,0 +1,28 @@
+@import '../vars';
+
+.cart {
+    
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+    
+    & a {
+        text-decoration: none;
+    }
+
+    & img {
+        margin-right: 15px;
+    }
+
+    &__informer {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 3px 13px;
+        display: inline-block;
+        background-color: $accent-color;
+        color: $secondary-color;
+        
+    }
+   
+}
