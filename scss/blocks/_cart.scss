@@ -21,8 +21,22 @@
         padding: 3px 13px;
         display: inline-block;
         background-color: $accent-color;
-        color: $secondary-color;
-        
+        color: $light;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: -10px;
+            border-right: 10px solid $accent-color;
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            top: 0;
+            width: 0;
+            height: 0;
+            
+            
+        }
     }
    
 }

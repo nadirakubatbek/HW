@@ -1,0 +1,37 @@
+@import '../vars';
+
+.socials {
+    margin: 0;
+    padding-left: 40px;
+    list-style: none;
+
+    &__item {
+        padding-top: 10px;
+    }
+
+    &__link {
+        position: relative;
+        padding-left: 29px;
+        
+    }
+
+    &__link::before {
+        content: "";
+        left: 0;
+        top: 3px;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-image: url('../../images/vk.svg');
+        background-repeat: no-repeat;
+
+    }
+
+    &__link--fb::before {
+        background-image: url('../../images/fb.svg');
+    }
+
+    &__link--ins::before {
+        background-image: url('../../images/ins.svg');
+    }
+}
